@@ -1,0 +1,7 @@
+db_start:
+	docker-compose -f docker-compose.jodi.yaml up -d postgres
+
+server:
+	go run main.go
+
+.PHONY: db_start server
