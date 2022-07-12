@@ -4,8 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func ShowHello(c *gin.Context) {
-
+func Hello(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"message": "hello",
 	})

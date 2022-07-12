@@ -5,16 +5,15 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root123
-      - POSTGRES_DB=scraper
-  
-  app:
+      - POSTGRES_DB=jodi
+  api:
     build: 
       context: .
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
     environment:
-      - DB_SOURCE=postgres://root:root123@postgres:5432/scraper?sslmode=disable
+      - DB_SOURCE=postgres://root:root123@postgres:5432/jodi?sslmode=disable
     depends_on:
       - postgres
     entrypoint: ["/app/wait-for.sh", "postgres:5432", "--","/app/start.sh"]

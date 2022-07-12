@@ -1,9 +1,7 @@
-package store
+package db
 
 import (
 	"database/sql"
-
-	"github.com/jodi/models"
 )
 
 type Store interface {
@@ -13,16 +11,13 @@ type Store interface {
 type SQLStore struct {
 	db *sql.DB
 	*Queries
-	Config *models.Config
 }
 
-var DBState SQLStore
-
 //NewStore creates a new store
-func NewStore(db *sql.DB, config models.Config) {
-	DBState = SQLStore{
+func NewStore(db *sql.DB) *SQLStore {
+	return &SQLStore{
 		db:      db,
 		Queries: New(db),
-		Config:  &config,
 	}
+
 }
