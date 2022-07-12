@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08ddc881-48e1-41b1-96c3-d77e53f46e9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migration/20220304012144_init_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/models/users.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sqlc/models.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sqlc/querier.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sqlc/scrape.sql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sqlc/user.sql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/maker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/paseto_maker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/token/payload.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/auth.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/password.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/sqlNullString.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile.win" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.env" beforeDir="false" afterPath="$PROJECT_DIR$/app.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudbuild.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.jodi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/hello/hello.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/hello/hello.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/config.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/sqlc/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/dbConnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/sqlc/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/querier.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/config.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wait-for.sh" beforeDir="false" afterPath="$PROJECT_DIR$/wait-for.sh" afterDir="false" />
-    </list>
+    <list default="true" id="08ddc881-48e1-41b1-96c3-d77e53f46e9c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
