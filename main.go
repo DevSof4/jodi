@@ -2,27 +2,43 @@ package main
 
 import (
 	"database/sql"
+	"jodi/api"
+	db "jodi/db/sqlc"
+	"jodi/util"
 	"log"
 
-	"github.com/jodi/api"
-	"github.com/jodi/store"
-	"github.com/jodi/utils"
 	_ "github.com/lib/pq"
 )
 
+// @title Go web scrapping API
+// @version 1.0
+// @description
+// @schemes http https
+// @host localhost:8080
+// @BasePath /
+// @securityDefinitions.apikey bearerAuth
+// @in header
+// @name Authorization
+// @query.collection.format multi
+
 func main() {
-	config, err := utils.LoadConfig(".")
+
+	config, err := util.LoadConfig(".")
 	if err != nil {
-		log.Fatal("Configuration could not be loaded:", err)
+		log.Fatal("cannot load  config:", err)
 	}
 	conn, err := sql.Open(config.DBDriver, config.DBSource)
 	if err != nil {
 		log.Fatal("cannot connect to db:", err)
 	}
-	store.NewStore(conn, config)
-	api.Server()
-	err = api.Start(config.ServerAddress)
+	store := db.NewStore(conn)
+	server, err := api.NewServer(config, store)
 	if err != nil {
-		log.Fatal("Error while starting server:", err)
+		log.Fatal("cannot create server:", err)
+	}
+
+	err = server.Start(config.ServerAddress)
+	if err != nil {
+		log.Fatal("cannot start server:", err)
 	}
 }
