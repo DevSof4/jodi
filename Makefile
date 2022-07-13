@@ -16,8 +16,11 @@ createdb:
 dropdb:
 	sudo docker exec -it jodi dropdb jodi
 
-gooseup: 
+pgooseup:
 		goose -dir ./db/migration/ -v postgres "postgres://root:Tinkune7@jodi-db.calhwakwddpf.ap-south-1.rds.amazonaws.com:5432/jodi" up
+
+gooseup:
+		goose -dir ./db/migration/ -v postgres "postgres://root:root123@localhost:5432/jodi?sslmode=disable" up
 
 goosedown: 
 		goose -dir ./db/migration/ -v postgres "postgres://root:root123@localhost:5432/jodi?sslmode=disable" down
@@ -44,4 +47,4 @@ getsecret:
 		aws secretsmanager get-secret-value --secret-id jodi --query SecretString --output text | jq -r 'to_entries|map("\(.key)=\(.value)")|.[]' > app.env
 
 
-.PHONY:dcup dcdown drmi pgcontainer createdb dropdb gooseup goosedown sqlc dockerbuild dockerremove startcontainer swagger hexran getsecret
+.PHONY:dcup dcdown drmi pgcontainer createdb dropdb gooseup goosedown sqlc dockerbuild dockerremove startcontainer swagger hexran getsecret pgooseup
