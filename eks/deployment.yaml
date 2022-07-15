@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jodi-api-deployment
+  labels:
+    app: jodi-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jodi-api
+  template:
+    metadata:
+      labels:
+        app: jodi-api
+    spec:
+      containers:
+        - name: jodi-api
+          image: 832947262004.dkr.ecr.ap-south-1.amazonaws.com/jodi:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
