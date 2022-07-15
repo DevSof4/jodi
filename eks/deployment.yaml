@@ -17,5 +17,6 @@ spec:
       containers:
         - name: jodi-api
           image: 832947262004.dkr.ecr.ap-south-1.amazonaws.com/jodi:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
